@@ -287,7 +287,7 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.keymap.set('n', '<leader>e', ":Neotree<CR>", opts)
 
 -- lazygit
-vim.keymap.set('n', '<leader>l', ':LazyGit<CR>', { noremap = true, silent = true, desc = 'LazyGit' })
+vim.keymap.set('n', '<leader>l', ':LazyGit<CR>', opts)
 
 -- Window navigation
 vim.keymap.set('n', '<C-h>', '<C-w>h', opts)

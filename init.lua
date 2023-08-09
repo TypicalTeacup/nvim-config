@@ -146,6 +146,7 @@ require('lazy').setup({
             vim.cmd.colorscheme 'onedark'
         end,
     },
+    require("custom.themes.oxocarbon"),
 
     {
         -- Set lualine as statusline
@@ -270,6 +271,11 @@ vim.o.termguicolors = true
 -- Scrolloff
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
+
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.shiftround = true
+vim.o.expandtab = true
 
 -- [[ Basic Keymaps ]]
 
@@ -555,7 +561,3 @@ cmp.setup {
         { name = 'luasnip' },
     },
 }
-
-
--- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=4 sts=4 sw=4 et

@@ -65,6 +65,8 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     -- NOTE: First, some plugins that don't require any configuration
 
+    'ThePrimeagen/vim-be-good',
+
     -- Git related plugins
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
@@ -232,10 +234,13 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
+
+-- Relative numbers
+vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -269,8 +274,8 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- Scrolloff
-vim.o.scrolloff = 8
-vim.o.sidescrolloff = 8
+vim.o.scrolloff = 16
+vim.o.sidescrolloff = 16
 
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4

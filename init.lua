@@ -302,6 +302,8 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', opts)
 vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
 require("custom.keymaps.buffer-navigation")
 
+vim.keymap.set('n', '<leader>cc', ':noh<CR>', opts)
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })

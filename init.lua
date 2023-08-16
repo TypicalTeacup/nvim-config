@@ -28,6 +28,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     -- NOTE: First, some plugins that don't require any configuration
 
+    -- Discord rich presence (why not)
+    'andweeb/presence.nvim',
+
     -- primeagen my beloved
     'ThePrimeagen/vim-be-good',
 
@@ -112,7 +115,7 @@ require('lazy').setup({
             vim.cmd.colorscheme 'onedark'
         end,
     },
-    require("custom.themes.oxocarbon"),
+    -- require("custom.themes.oxocarbon"),
 
     {
         -- Set lualine as statusline
@@ -185,6 +188,7 @@ require('lazy').setup({
     },
 
 
+    'folke/noice.nvim',
     require("custom.plugins.neotree"),
     require("custom.plugins.barbar"),
 
@@ -462,6 +466,7 @@ local servers = {
     emmet_ls = {},
     cssls = {},
     volar = {},
+    intelephense = {},
 
     lua_ls = {
         Lua = {
